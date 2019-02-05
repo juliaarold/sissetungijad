@@ -1,0 +1,44 @@
+﻿Tasemed:
+1. muutujate defineerimine:
+1.1 tase - rida 31
+1.2 taseme aeg (algväärtus 0)- rida 37
+1.3 tase läbitud (algväärtus 'false') - rida 38
+2. taseme lõpetamine - read 249-261
+2.1 tekst taseme info kohta - rida 255
+2.2 taseme info kuvamine - rida 256
+3. järgmisele tasemele liikumine - rida 257
+4. taseme aja 'levelTime' "nullimine" - rida 251
+5. muutuja 'levelCompleted' muutmine tõeseks
+6. ajaline viide järgmise taseme alustamiseks (3 sekundit), kasutatakse muutujaid 'levelTime' ja 'levelCompleted' - read 216-221
+7. mängutasemest sõltuvalt uue taseme loomine:
+7.1 tasemed 1 ja 2 - read 383-386:
+7.1.1 tekitatakse sissetungijad funktsiooniga "createAliens" - read 111-133
+7.1.2 muudetakse sissetungijate arvu sõltuvalt tasemest - rida 112
+7.2 tasemed 3 ja edasi - read 387-390
+7.2.1 tekitatakse sissetungijad funktsiooniga "createAliens1" - read 135-156
+7.2.2 kuvatakse 4 rida vaenlasi, igas reas 5 vaenlast - read 136-147
+8. arvutatakse uus laskmistihedus, millega vaenlane tulistab - rida 339
+9. kui mäng on läbi, siis taseme algväärtuse taastamine - rida 304
+
+Parim tulemus:
+1. muutujate defineerimine:
+1.1 parim tulemus - rida 33
+1.2 parima tulemuse tekst - rida 34
+2. parima tulemuse kuvamine:
+2.1 kui tulemus on suurem, kui parim tulemus (read 294-298), siis:
+2.1.1 tulemuse omistamine parimale tulemusele - rida 296
+2.1.2 parima tulemuse teksti lisamine - rida 297
+2.2 kui tulemus ei ole suurem kui parim tulemus (read 299-300), siis:
+2.2.1 parima tulemuse tekst on tühi tähemärkide jada - rida 300
+2.3 parima tulemuse teksti lisamine tekstile - rida 301
+
+Kui mäng saab läbi, siis mängu taaskäivitamine, kui teatud aeg (5 sekundit) on möödunud:
+1. muutujate defineerimine:
+1.1 lõpetamise aeg - rida 36
+1.2 kas mängijad on elus (algväärtus 'true')- rida 37
+2. kui mäng saab läbi, siis:
+2.1 algväärtustatakse muutuja 'lõpetamise aeg' - rida 289
+2.2 muutuja 'alive' saab väärtuseks 'false' - rida 306
+3. kui muutuja 'lõpetamise aeg' on möödus 5 sekundit ja muutuja 'alive' väärtuseks on 'false' (read 209-214), siis:
+3.1 saab muutuja 'alive' väärtuseks 'true' - rida 212
+3.2 mäng taaskäivitatakse - rida 213
